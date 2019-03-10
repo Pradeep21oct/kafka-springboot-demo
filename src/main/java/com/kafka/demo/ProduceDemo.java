@@ -27,6 +27,7 @@ public class ProduceDemo {
         //send data
         producer.send(record);
         producer.flush();
+        producer.close();
         System.out.println("dome");
     }
 }
